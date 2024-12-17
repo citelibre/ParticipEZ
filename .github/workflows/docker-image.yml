@@ -58,9 +58,9 @@ jobs:
       run: docker build citelibre-participEZ -t citelibre/particip_ez:ihm-$VERSION
     
     - name: Save participEZ
-      run: docker save -o citelibre-identEZ.tar citelibre/particip_ez:ihm-$VERSION
+      run: docker save -o citelibre-participEZ.tar citelibre/particip_ez:ihm-$VERSION
       
-    - name: Run Trivy vulnerability scanner in tarball mode of rendez vous image
+    - name: Run Trivy vulnerability scanner in tarball mode of particip'EZ image
       uses: aquasecurity/trivy-action@0.20.0
       with:
         input: /github/workspace/citelibre-participEZ.tar
