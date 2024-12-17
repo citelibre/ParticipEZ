@@ -63,7 +63,7 @@ services:
 
   citelibre:
     image: ${REPO}/ihm
-    container_name: citelibre_participez
+    container_name: citelibre_particip_ez
     env_file: "./external.env"
     ports:
         - 8080:8080

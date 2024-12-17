@@ -1,11 +1,7 @@
-# ParticipEZ
-This repository hosts all source code required to launch a full-featured local CiteLibre ParticipEZ application.
-
-CiteLibre Particip'EZ is a Citizen participatory application that lets you easily set up digital services for your citizens to get involved to improve their lives as citizens. Benefit from ready-to-use services, develop them according to your needs, and freely create new ones.
 <p align="center">
 	<img src="./utils/CiteLibre.svg" alt="CiteLibre logo"/>
 </p>
-# CiteLibre RendezVous with docker-compose
+# CiteLibre ParticipEZ with docker-compose
 
 ## Table of contents
 
@@ -17,7 +13,7 @@ CiteLibre Particip'EZ is a Citizen participatory application that lets you easil
 - [Matomo](#matomo)
 - [Production usage](#production-usage)
 
-You can find more information in the [Wiki](https://github.com/citelibre/Particip'EZ/wiki) (persistant data, dev mode, edit theme, etc)
+You can find more information in the [Wiki](https://github.com/citelibre/ParticipEZ/wiki) (persistant data, dev mode, edit theme, etc)
 
 ## Architecture
 Architecture with embedded database and stmp server
@@ -53,9 +49,9 @@ If you create an `.env` file, docker compose use it without using --env-file
 
 ### URL and default login
 
-- Lutece Open UI at <http://localhost:8080/participez>.
+- Lutece Open UI at <http://localhost:8080/participEZ>.
 
-- Lutece Back end is available at : <http://localhost:8080/participez/jsp/admin/AdminLogin.jsp> : `admin`/`adminadmin`
+- Lutece Back end is available at : <http://localhost:8080/participEZ/jsp/admin/AdminLogin.jsp> : `admin`/`adminadmin`
 
 - Mail (in order to see mail send by application) at <http://localhost:1080/>.
 
