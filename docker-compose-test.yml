@@ -3,7 +3,7 @@ version: '3.5'
 services:
   db:
     image: ${REPO}/db
-    container_name: rdv_db
+    container_name: citelibre_db
     env_file: "./external.env"
     ports:
       - "3307:3306"
@@ -13,7 +13,7 @@ services:
 
   solr:
     image: ${REPO}/solr
-    container_name: rdv_solr
+    container_name: citelibre_solr
     command: -force
     depends_on:
       - db
@@ -28,7 +28,7 @@ services:
 
   mailpit:
     image: axllent/mailpit:v1.18.3
-    container_name: rdv_mailpit
+    container_name: citelibre_mailpit
     restart: unless-stopped
     # volumes:
     #   - ./data:/data
@@ -43,7 +43,7 @@ services:
 
   matomo:
     image: ${REPO}/matomo
-    container_name: rdv_matomo
+    container_name: citelibre_matomo
     env_file: "./external.env"
     ports:
       - "80:80"
@@ -52,7 +52,7 @@ services:
 
   keycloak:
     image: ${REPO}/keycloak
-    container_name: rdv_keycloak
+    container_name: citelibre_keycloak
     env_file: "./external.env"
     ports:
       - "8081:8080"
@@ -63,7 +63,7 @@ services:
 
   citelibre:
     image: ${REPO}/ihm
-    container_name: rdv_citelibre
+    container_name: citelibre_participez
     env_file: "./external.env"
     ports:
         - 8080:8080
@@ -89,7 +89,7 @@ services:
 
   kibana:
     image: ${REPO}/kibana
-    container_name: rdv_kibana
+    container_name: citelibre_kibana
     environment:
       - discovery.type=single-node
       - server.publicBaseUrl=localhost
@@ -104,7 +104,7 @@ services:
 
   elasticsearch:
     image: ${REPO}/elasticsearch
-    container_name: rdv_elasticsearch
+    container_name: citelibre_elasticsearch
     environment:
       - ELASTIC_PASSWORD="*93n2US7fWog"
       - discovery.type=single-node

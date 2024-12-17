@@ -2,8 +2,8 @@ version: '3.5'
 
 services:
   db:
-    image: citelibre/particip_ez:db-1.0.18-SNAPSHOT
-    container_name: particip_ez_db
+    image: ${REPO}/participez:db-1.0.18-SNAPSHOT
+    container_name: citelibre_db
     env_file: "./external.env"
     ports:
       - "3307:3306"
@@ -12,8 +12,8 @@ services:
     #    - ./mysql-data:/var/lib/mysql
 
   solr:
-    image: citelibre/rendezvous:solr-1.0.18-SNAPSHOT
-    container_name: rdv_solr
+    image: ${REPO}/participez:solr-1.0.18-SNAPSHOT
+    container_name: citelibre_solr
     command: -force
     depends_on:
       - db
@@ -28,7 +28,7 @@ services:
 
   mailpit:
     image: axllent/mailpit:v1.18.3
-    container_name: rdv_mailpit
+    container_name: citelibre_mailpit
     restart: unless-stopped
     # volumes:
     #   - ./data:/data
@@ -42,8 +42,8 @@ services:
       MP_SMTP_AUTH_ALLOW_INSECURE: 1
           
   matomo:
-    image: citelibre/rendezvous:matomo-1.0.18-SNAPSHOT
-    container_name: rdv_matomo
+    image: ${REPO}/participez:matomo-1.0.18-SNAPSHOT
+    container_name: citelibre_matomo
     env_file: "./external.env"
     ports:
       - "80:80"
@@ -51,8 +51,8 @@ services:
       - solr
 
   keycloak:
-    image: citelibre/rendezvous:keycloak-1.0.18-SNAPSHOT
-    container_name: rdv_keycloak
+    image: ${REPO}/participez:keycloak-1.0.18-SNAPSHOT
+    container_name: citelibre_keycloak
     env_file: "./external.env"
     ports:
       - "8081:8080"
@@ -60,8 +60,8 @@ services:
       - db
 
   citelibre:
-    image: citelibre/rendezvous:ihm-1.0.18-SNAPSHOT
-    container_name: rdv_citelibre
+    image: ${REPO}/participez:ihm-1.0.18-SNAPSHOT
+    container_name: citelibre_participez
     env_file: "./external.env"
     ports:
       - 8080:8080
@@ -85,8 +85,8 @@ services:
     #     target: /usr/local/tomcat/webapps/rendezvous
 
   kibana:
-    image: citelibre/rendezvous:kibana-1.0.18-SNAPSHOT
-    container_name: rdv_kibana
+    image: ${REPO}/participez:kibana-1.0.18-SNAPSHOT
+    container_name: citelibre_kibana
     environment:
       - discovery.type=single-node
       - server.publicBaseUrl=localhost
@@ -100,8 +100,8 @@ services:
         #  - ./kibana/kibana.yml:/usr/share/kibana/config/kibana.yml
 
   elasticsearch:
-    image: citelibre/rendezvous:elasticsearch-1.0.18-SNAPSHOT
-    container_name: rdv_elasticsearch
+    image: ${REPO}/participez:elasticsearch-1.0.18-SNAPSHOT
+    container_name: citelibre_elasticsearch
     environment:
       - ELASTIC_PASSWORD="*93n2US7fWog"
       - discovery.type=single-node

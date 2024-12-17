@@ -617,6 +617,7 @@
         </dependency>
 		
 		<!-- Carto -->
+		<!--
 		<dependency>
 			<groupId>fr.paris.lutece.plugins</groupId>
 			<artifactId>plugin-carto</artifactId>
@@ -641,62 +642,65 @@
 			<version>1.0.1-SNAPSHOT</version>
 			<type>lutece-plugin</type>
 		</dependency>
+		-->
 		
 		<!-- Extends -->
-		<dependency>
-			<groupId>fr.paris.lutece.plugins</groupId>
-			<artifactId>module-extend-rating</artifactId>
-			<version>[3.0.1]</version>
-			<type>lutece-plugin</type>
-		</dependency>
+		<!--
 		<dependency>
 			<groupId>fr.paris.lutece.plugins</groupId>
 			<artifactId>plugin-extend</artifactId>
 			<version>[1.3.7]</version>
 			<type>lutece-plugin</type>
 		</dependency>
-		<dependency>
-			<groupId>fr.paris.lutece.plugins</groupId>
-			<artifactId>module-extend-feedback</artifactId>
-			<version>[2.0.0]</version>
-			<type>lutece-plugin</type>
-		</dependency>
-		<dependency>
-			<groupId>fr.paris.lutece.plugins</groupId>
-			<artifactId>module-extend-comment</artifactId>
-			<version>[1.2.0]</version>
-			<type>lutece-plugin</type>
-		</dependency>
-		<dependency>
-			<groupId>fr.paris.lutece.plugins</groupId>
-			<artifactId>module-extend-actionbar</artifactId>
-			<version>[1.1.2]</version>
-			<type>lutece-plugin</type>
-		</dependency>
-		<dependency>
-			<groupId>fr.paris.lutece.plugins</groupId>
-			<artifactId>module-extend-opengraph</artifactId>
-			<version>[1.2.4]</version>
-			<type>lutece-plugin</type>
-		</dependency>
-		<dependency>
-			<groupId>fr.paris.lutece.plugins</groupId>
-			<artifactId>module-forms-extend</artifactId>
-			<version>[1.0.0]</version>
-			<type>lutece-plugin</type>
-		</dependency>
+		
+			<dependency>
+				<groupId>fr.paris.lutece.plugins</groupId>
+				<artifactId>module-extend-rating</artifactId>
+				<version>[3.0.2]</version>
+				<type>lutece-plugin</type>
+			</dependency>
+			<dependency>
+				<groupId>fr.paris.lutece.plugins</groupId>
+				<artifactId>module-extend-feedback</artifactId>
+				<version>[2.0.1]</version>
+				<type>lutece-plugin</type>
+			</dependency>
+			<dependency>
+				<groupId>fr.paris.lutece.plugins</groupId>
+				<artifactId>module-extend-comment</artifactId>
+				<version>[1.2.1]</version>
+				<type>lutece-plugin</type>
+			</dependency>
+			<dependency>
+				<groupId>fr.paris.lutece.plugins</groupId>
+				<artifactId>module-extend-actionbar</artifactId>
+				<version>[1.1.3]</version>
+				<type>lutece-plugin</type>
+			</dependency>
+			<dependency>
+				<groupId>fr.paris.lutece.plugins</groupId>
+				<artifactId>module-extend-opengraph</artifactId>
+				<version>[1.2.5]</version>
+				<type>lutece-plugin</type>
+			</dependency>
+			<dependency>
+				<groupId>fr.paris.lutece.plugins</groupId>
+				<artifactId>module-forms-extend</artifactId>
+				<version>[1.0.1]</version>
+				<type>lutece-plugin</type>
+			</dependency>
 		<dependency>
 			<groupId>fr.paris.lutece.plugins</groupId>
 			<artifactId>module-workflow-extendcomment</artifactId>
 			<version>[1.0.0]</version>
 			<type>lutece-plugin</type>
 		</dependency>
-		<dependency>
-			<groupId>fr.paris.lutece.plugins</groupId>
-			<artifactId>module-extend-mydashboard</artifactId>
-			<version>[1.0.0]</version>
-			<type>lutece-plugin</type>
-		</dependency>
+			<dependency>
+				<groupId>fr.paris.lutece.plugins</groupId>
+				<artifactId>module-extend-mydashboard</artifactId>
+				<version>[1.0.1]</version>
+				<type>lutece-plugin</type>
+			</dependency>
 		<dependency>
 			<groupId>fr.paris.lutece.plugins</groupId>
 			<artifactId>module-workflow-extendfeedback</artifactId>
@@ -709,44 +713,65 @@
 			<version>[1.0.0]</version>
 			<type>lutece-plugin</type>
 		</dependency>
-		<dependency>
-			<groupId>fr.paris.lutece.plugins</groupId>
-			<artifactId>module-extend-statistics</artifactId>
-			<version>[1.0.4]</version>
-			<type>lutece-plugin</type>
-		</dependency>
+			<dependency>
+				<groupId>fr.paris.lutece.plugins</groupId>
+				<artifactId>module-extend-statistics</artifactId>
+				<version>[1.0.5]</version>
+				<type>lutece-plugin</type>
+			</dependency>
 		<dependency>
 			<groupId>fr.paris.lutece.plugins</groupId>
 			<artifactId>module-blog-extendcomment</artifactId>
 			<version>[2.0.0-SNAPSHOT]</version>
 			<type>lutece-plugin</type>
 		</dependency>
-		<dependency>
-			<groupId>fr.paris.lutece.plugins</groupId>
-			<artifactId>module-extend-favorite</artifactId>
-			<version>[1.0.3]</version>
-			<type>lutece-plugin</type>
-		</dependency>
-		<dependency>
-			<groupId>fr.paris.lutece.plugins</groupId>
-			<artifactId>module-extend-actionhit</artifactId>
-			<version>[1.0.4]</version>
-			<type>lutece-plugin</type>
-		</dependency>
-		<dependency>
-			<groupId>fr.paris.lutece.plugins</groupId>
-			<artifactId>module-resource-extendableresource</artifactId>
-			<version>[1.0.0-SNAPSHOT]</version>
-			<type>lutece-plugin</type>
-		</dependency>
+		
+							<dependency>
+								<groupId>fr.paris.lutece.plugins</groupId>
+								<artifactId>module-extend-favorite</artifactId>
+								<version>[1.0.3]</version>
+								<type>lutece-plugin</type>
+								<exclusions>
+									<exclusion>
+										<artifactId>plugin-extend</artifactId>
+										<groupId>fr.paris.lutece.plugins</groupId>
+									</exclusion>
+								</exclusions>
+							</dependency>
+							<dependency>
+								<groupId>fr.paris.lutece.plugins</groupId>
+								<artifactId>module-extend-actionhit</artifactId>
+								<version>[1.0.4]</version>
+								<type>lutece-plugin</type>
+								<exclusions>
+									<exclusion>
+										<artifactId>plugin-extend</artifactId>
+										<groupId>fr.paris.lutece.plugins</groupId>
+									</exclusion>
+								</exclusions>
+							</dependency>
+							<dependency>
+								<groupId>fr.paris.lutece.plugins</groupId>
+								<artifactId>module-resource-extendableresource</artifactId>
+								<version>[1.0.0-SNAPSHOT]</version>
+								<type>lutece-plugin</type>
+								<exclusions>
+									<exclusion>
+										<artifactId>plugin-extend</artifactId>
+										<groupId>fr.paris.lutece.plugins</groupId>
+									</exclusion>
+								</exclusions>
+							</dependency>
 		<dependency>
 			<groupId>fr.paris.lutece.plugins</groupId>
 			<artifactId>module-extend-comment-extendable</artifactId>
 			<version>[1.0.2]</version>
 			<type>lutece-plugin</type>
 		</dependency>
+		-->
 		
 		<!-- Blog -->
+		<!--
 		<dependency>
 			<groupId>fr.paris.lutece.plugins</groupId>
 			<artifactId>plugin-blog</artifactId>
@@ -771,6 +796,7 @@
 			<version>[1.0.3-SNAPSHOT,)</version>
 			<type>lutece-plugin</type>
 		</dependency>
+		-->
 		
         <!-- Theme -->
         <dependency>
