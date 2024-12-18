@@ -2,7 +2,7 @@ ARG site=site-citelibre-participEZ-1.0.0
 ARG NAME_APP=participEZ
 
 # build the site and assemble the webapp
-FROM lutece/builder as builder
+from lutece/builder as builder
 ARG site
 ARG NAME_APP
 
