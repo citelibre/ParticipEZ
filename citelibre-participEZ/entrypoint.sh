@@ -24,6 +24,12 @@ mail_port="${LUTECE_MAIL_PORT:-1025}"
 mail_user="${LUTECE_MAIL_USER:-}"
 mail_password="${LUTECE_MAIL_PWD:-}"
 
+# available languages to switch to in BO only
+echo "Configure languages"
+default_fo_lang="${LUTECE_DEFAULT_LANG:-en}"
+available_lang="${LUTECE_AVAILABLE_LANG:-en,fr}"
+sed -i "s/lutece.i18n.defaultLocale=.*/lutece.i18n.defaultLocale=$default_fo_lang/" ${tomcat}/webapps/${site_folder}/WEB-INF/conf/lutece.properties
+sed -i "s/lutece.i18n.availableLocales=.*/lutece.i18n.availableLocales=$available_lang/" ${tomcat}/webapps/${site_folder}/WEB-INF/conf/lutece.properties
 
 echo "Config database"
 sed -i "s/portal.user=.*/portal\.user=$db_user/" ${tomcat}/webapps/${site_folder}/WEB-INF/conf/db.properties

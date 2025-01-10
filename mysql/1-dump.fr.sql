@@ -1536,7 +1536,7 @@ CREATE TABLE `core_user_role` (
 
 LOCK TABLES `core_user_role` WRITE;
 /*!40000 ALTER TABLE `core_user_role` DISABLE KEYS */;
-INSERT INTO `core_user_role` VALUES ('all_site_manager',1),('all_site_manager',2),('assign_groups',1),('assign_groups',2),('assign_groups',3),('assign_roles',1),('assign_roles',2),('assign_roles',3),('CREATE_REFERENCE_IMPORT',1),('forms_manager',1),('forms_manager',2),('forms_manager',9),('forms_manager',17),('forms_multiview',1),('forms_multiview',9),('forms_multiview_unitree',17),('kibana_dashboards_manager',1),('mylutece_manager',1),('profiles_manager',1),('profiles_views_manager',1),('sollicitation_administrateur',5),('sollicitation_administrateur',9),('sollicitation_gestionnaires',5),('sollicitation_gestionnaires',6),('sollicitation_gestionnaires',9),('sollicitation_gestionnaires',10),('sollicitation_gestionnaires',14),('sollicitation_gestionnaires',18),('sollicitation_instructeurs',5),('sollicitation_instructeurs',6),('sollicitation_instructeurs',7),('sollicitation_instructeurs',8),('sollicitation_instructeurs',9),('sollicitation_instructeurs',10),('sollicitation_instructeurs',11),('sollicitation_instructeurs',12),('sollicitation_instructeurs',13),('sollicitation_instructeurs',14),('sollicitation_instructeurs',15),('sollicitation_instructeurs',16),('sollicitation_instructeurs',18),('sollicitation_instructeurs',19),('sollicitation_instructeurs',20),('super_admin',1),('super_admin',2),('unittree_management',1),('unittree_management',2),('workflow_manager',1),('workflow_manager',2);
+INSERT INTO `core_user_role` VALUES ('all_site_manager',1),('all_site_manager',2),('assign_groups',1),('assign_groups',2),('assign_groups',3),('assign_roles',1),('assign_roles',2),('assign_roles',3),('create_reference_import',1),('forms_manager',1),('forms_manager',2),('forms_manager',9),('forms_manager',17),('forms_multiview',1),('forms_multiview',9),('forms_multiview_unitree',1),('forms_multiview_unitree',17),('kibana_dashboards_manager',1),('mylutece_manager',1),('profiles_manager',1),('profiles_views_manager',1),('sollicitation_administrateur',5),('sollicitation_administrateur',9),('sollicitation_gestionnaires',5),('sollicitation_gestionnaires',6),('sollicitation_gestionnaires',9),('sollicitation_gestionnaires',10),('sollicitation_gestionnaires',14),('sollicitation_gestionnaires',18),('sollicitation_instructeurs',5),('sollicitation_instructeurs',6),('sollicitation_instructeurs',7),('sollicitation_instructeurs',8),('sollicitation_instructeurs',9),('sollicitation_instructeurs',10),('sollicitation_instructeurs',11),('sollicitation_instructeurs',12),('sollicitation_instructeurs',13),('sollicitation_instructeurs',14),('sollicitation_instructeurs',15),('sollicitation_instructeurs',16),('sollicitation_instructeurs',18),('sollicitation_instructeurs',19),('sollicitation_instructeurs',20),('super_admin',1),('super_admin',2),('unittree_management',1),('unittree_management',2),('workflow_manager',1),('workflow_manager',2);
 /*!40000 ALTER TABLE `core_user_role` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -2081,7 +2081,7 @@ CREATE TABLE `forms_indexer_action` (
   PRIMARY KEY (`id_action`),
   KEY `idx_fia_id_form_response` (`id_form_response`),
   KEY `idx_fia_id_task` (`id_task`)
-) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
